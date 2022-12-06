@@ -26,7 +26,11 @@ export default function Post() {
         <>
           <div className="singleImageContainer">
             <img
-              src={post._embedded["wp:featuredmedia"]["0"].source_url}
+              src={
+                post._embedded
+                  ? post._embedded["wp:featuredmedia"]["0"].source_url
+                  : ""
+              }
               alt="post image"
             />
           </div>
