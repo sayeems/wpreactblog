@@ -8,10 +8,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Posts />} />
-        <Route path="/posts/:slug" element={<Post />} />
-      </Routes>
+      <div className="body">
+        <Routes>
+          <Route path="/" element={<Posts />} />
+          <Route path="/posts/:slug" element={<Post />} />
+        </Routes>
+      </div>
     </>
   );
 }
